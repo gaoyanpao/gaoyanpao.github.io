@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>dapao</title>
+        <link>https://gaoyanpao.github.io/</link>
+        <description></description>
+        <generator>Hugo 0.70.0-DEV https://gohugo.io/</generator>
+        
+            <language>zh-CN</language>
+        
+        
+            <managingEditor>gaoyanpao@gmail.com (dapao)</managingEditor>
+        
+        
+            <webMaster>gaoyanpao@gmail.com (dapao)</webMaster>
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+        
+        <lastBuildDate>Mon, 13 Apr 2020 08:33:46 +0000</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss+xml" href="https://gaoyanpao.github.io/rss.xml" />
+        
+        
+    </channel>
+</rss>
