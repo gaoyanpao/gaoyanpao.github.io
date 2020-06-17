@@ -23,15 +23,93 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 23 May 2020 04:12:44 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 17 Jun 2020 14:52:23 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://gaoyanpao.github.io/rss.xml" />
         
         
             <item>
+                <title>Hyperledger Fabric学习1: 启动第一个fabric网络</title>
+                <link>https://gaoyanpao.github.io/posts/fabric/learn1/</link>
+                <guid isPermaLink="true">https://gaoyanpao.github.io/posts/fabric/learn1/</guid>
+                <pubDate>Wed, 20 May 2020 09:44:28 +0800</pubDate>
+                
+                    <author>gaoyanpao@gmail.com (dapao)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<ol>
+<li>
+<p>二进制文件下载</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">curl -sSL https://bit.ly/2ysbOFE <span class="p">|</span> bash -s
+</code></pre></td></tr></table>
+</div>
+</div><p>可以指定版本</p>
+<pre><code>curl -sSL https://bit.ly/2ysbOFE | bash -s -- &lt;fabric_version&gt; &lt;fabric-ca_version&gt; &lt;thirdparty_version&gt;
+curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.1 1.4.6 0.4.18
+</code></pre><p>下载完成后将fabric-sample/bin加入环境变量path</p>
+</li>
+<li>
+<p>启动并创建第一个区块
+创建区块</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">./byfn.sh generate
+</code></pre></td></tr></table>
+</div>
+</div><p>启动/关闭fabric网络</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">./byfn.sh up
+./byfn.sh down
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://gaoyanpao.github.io/tags/fabric/">fabric</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://gaoyanpao.github.io/tags/blockchain/">blockchain</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
                 <title>Python XML转JSON</title>
-                <link>https://gaoyanpao.github.io/posts/python-xml%E8%BD%ACjson/</link>
-                <guid isPermaLink="true">https://gaoyanpao.github.io/posts/python-xml%E8%BD%ACjson/</guid>
+                <link>https://gaoyanpao.github.io/posts/python_xml_to_json/</link>
+                <guid isPermaLink="true">https://gaoyanpao.github.io/posts/python_xml_to_json/</guid>
                 <pubDate>Mon, 11 Mar 2019 09:17:52 +0800</pubDate>
                 
                     <author>gaoyanpao@gmail.com (dapao)</author>
@@ -209,8 +287,8 @@
         
             <item>
                 <title>Google支付校验 Python</title>
-                <link>https://gaoyanpao.github.io/posts/google%E6%94%AF%E4%BB%98%E6%A0%A1%E9%AA%8C-python/</link>
-                <guid isPermaLink="true">https://gaoyanpao.github.io/posts/google%E6%94%AF%E4%BB%98%E6%A0%A1%E9%AA%8C-python/</guid>
+                <link>https://gaoyanpao.github.io/posts/googlepay_validate_python/</link>
+                <guid isPermaLink="true">https://gaoyanpao.github.io/posts/googlepay_validate_python/</guid>
                 <pubDate>Mon, 11 Mar 2019 09:05:15 +0800</pubDate>
                 
                     <author>gaoyanpao@gmail.com (dapao)</author>
@@ -294,8 +372,8 @@
         
             <item>
                 <title>AES填充实现</title>
-                <link>https://gaoyanpao.github.io/posts/aes%E5%A1%AB%E5%85%85%E5%AE%9E%E7%8E%B0/</link>
-                <guid isPermaLink="true">https://gaoyanpao.github.io/posts/aes%E5%A1%AB%E5%85%85%E5%AE%9E%E7%8E%B0/</guid>
+                <link>https://gaoyanpao.github.io/posts/aes_pad/</link>
+                <guid isPermaLink="true">https://gaoyanpao.github.io/posts/aes_pad/</guid>
                 <pubDate>Thu, 20 Dec 2018 09:44:28 +0800</pubDate>
                 
                     <author>gaoyanpao@gmail.com (dapao)</author>

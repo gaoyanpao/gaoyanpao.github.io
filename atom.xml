@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">dapao</title>
     <subtitle type="html"></subtitle>
-    <updated>2020-05-23T04:12:44+08:00</updated>
+    <updated>2020-06-17T14:52:23+08:00</updated>
     <id>https://gaoyanpao.github.io/</id>
     <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://gaoyanpao.github.io/atom.xml" />
@@ -17,10 +17,93 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.68.3">Hugo</generator>
         <entry>
+            <title type="text">Hyperledger Fabric学习1: 启动第一个fabric网络</title>
+            <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/posts/fabric/learn1/" />
+            <id>https://gaoyanpao.github.io/posts/fabric/learn1/</id>
+            <updated>2020-06-17T14:49:32+08:00</updated>
+            <published>2020-05-20T09:44:28+08:00</published>
+            <author>
+                    <name>dapao</name>
+                    <uri>https://gaoyanpao.github.io/</uri>
+                    <email>gaoyanpao@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    
+    <summary type="html"><![CDATA[二进制文件下载 1 curl -sSL https://bit.ly/2ysbOFE | bash -s 可以指定版本 curl -sSL https://bit.ly/2ysbOFE | bash -s -- &lt;fabric_version&gt; &lt;fabric-ca_version&gt; &lt;thirdparty_version&gt; curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.1 1.4.6 0.4.18 下载……]]></summary>
+            
+                <content type="html"><![CDATA[<ol>
+<li>
+<p>二进制文件下载</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">curl -sSL https://bit.ly/2ysbOFE <span class="p">|</span> bash -s
+</code></pre></td></tr></table>
+</div>
+</div><p>可以指定版本</p>
+<pre><code>curl -sSL https://bit.ly/2ysbOFE | bash -s -- &lt;fabric_version&gt; &lt;fabric-ca_version&gt; &lt;thirdparty_version&gt;
+curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.1 1.4.6 0.4.18
+</code></pre><p>下载完成后将fabric-sample/bin加入环境变量path</p>
+</li>
+<li>
+<p>启动并创建第一个区块
+创建区块</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">./byfn.sh generate
+</code></pre></td></tr></table>
+</div>
+</div><p>启动/关闭fabric网络</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">./byfn.sh up
+./byfn.sh down
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://gaoyanpao.github.io/tags/fabric/" term="fabric" label="fabric" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://gaoyanpao.github.io/tags/blockchain/" term="blockchain" label="blockchain" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">Python XML转JSON</title>
-            <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/posts/python-xml%E8%BD%ACjson/" />
-            <id>https://gaoyanpao.github.io/posts/python-xml%E8%BD%ACjson/</id>
-            <updated>2020-05-23T03:53:31+08:00</updated>
+            <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/posts/python_xml_to_json/" />
+            <id>https://gaoyanpao.github.io/posts/python_xml_to_json/</id>
+            <updated>2020-06-17T14:50:18+08:00</updated>
             <published>2019-03-11T09:17:52+08:00</published>
             <author>
                     <name>dapao</name>
@@ -202,9 +285,9 @@
     
         <entry>
             <title type="text">Google支付校验 Python</title>
-            <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/posts/google%E6%94%AF%E4%BB%98%E6%A0%A1%E9%AA%8C-python/" />
-            <id>https://gaoyanpao.github.io/posts/google%E6%94%AF%E4%BB%98%E6%A0%A1%E9%AA%8C-python/</id>
-            <updated>2020-05-23T04:11:11+08:00</updated>
+            <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/posts/googlepay_validate_python/" />
+            <id>https://gaoyanpao.github.io/posts/googlepay_validate_python/</id>
+            <updated>2020-06-17T14:50:57+08:00</updated>
             <published>2019-03-11T09:05:15+08:00</published>
             <author>
                     <name>dapao</name>
@@ -292,9 +375,9 @@
     
         <entry>
             <title type="text">AES填充实现</title>
-            <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/posts/aes%E5%A1%AB%E5%85%85%E5%AE%9E%E7%8E%B0/" />
-            <id>https://gaoyanpao.github.io/posts/aes%E5%A1%AB%E5%85%85%E5%AE%9E%E7%8E%B0/</id>
-            <updated>2020-05-23T03:51:57+08:00</updated>
+            <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/posts/aes_pad/" />
+            <id>https://gaoyanpao.github.io/posts/aes_pad/</id>
+            <updated>2020-06-17T14:51:18+08:00</updated>
             <published>2018-12-20T09:44:28+08:00</published>
             <author>
                     <name>dapao</name>
