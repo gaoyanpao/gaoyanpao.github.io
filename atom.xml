@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">dapao</title>
     <subtitle type="html"></subtitle>
-    <updated>2020-08-23T20:48:51+08:00</updated>
+    <updated>2020-08-23T20:50:25+08:00</updated>
     <id>https://gaoyanpao.github.io/</id>
     <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://gaoyanpao.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">Charle抓取https</title>
             <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/posts/charles_https/" />
             <id>https://gaoyanpao.github.io/posts/charles_https/</id>
-            <updated>2020-08-23T20:48:45+08:00</updated>
+            <updated>2020-08-23T20:50:19+08:00</updated>
             <published>2020-08-23T16:56:26+08:00</published>
             <author>
                     <name>dapao</name>
@@ -64,7 +64,7 @@
 <p>将证书安装为系统证书, 需要root权限</p>
 <p>证书的命名规则: &lt;Certificate_Hash&gt;.<Number>, 文件名为证书文件的hash值, 后缀为一个数字, 主要用于标记区别hash值相同的文件</p>
 <p>证书hash计算: <code>openssl x509 -subject_hash_old -in &lt;Certificate_File&gt;</code></p>
-<p>将证书改名后拷贝到, 系统证书目录：<code>/system/etc/security/cacerts/</code></p>
+<p>将证书改名后拷贝到系统证书目录：<code>/system/etc/security/cacerts/</code></p>
 </li>
 </ol>
 </li>

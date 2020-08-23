@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sun, 23 Aug 2020 20:48:51 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 23 Aug 2020 20:50:25 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://gaoyanpao.github.io/rss.xml" />
         
@@ -71,7 +71,7 @@
 <p>将证书安装为系统证书, 需要root权限</p>
 <p>证书的命名规则: &lt;Certificate_Hash&gt;.<Number>, 文件名为证书文件的hash值, 后缀为一个数字, 主要用于标记区别hash值相同的文件</p>
 <p>证书hash计算: <code>openssl x509 -subject_hash_old -in &lt;Certificate_File&gt;</code></p>
-<p>将证书改名后拷贝到, 系统证书目录：<code>/system/etc/security/cacerts/</code></p>
+<p>将证书改名后拷贝到系统证书目录：<code>/system/etc/security/cacerts/</code></p>
 </li>
 </ol>
 </li>
