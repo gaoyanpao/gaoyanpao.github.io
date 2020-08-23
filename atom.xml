@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">dapao</title>
     <subtitle type="html"></subtitle>
-    <updated>2020-06-17T14:52:23+08:00</updated>
+    <updated>2020-08-23T20:41:14+08:00</updated>
     <id>https://gaoyanpao.github.io/</id>
     <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://gaoyanpao.github.io/atom.xml" />
@@ -16,6 +16,73 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.68.3">Hugo</generator>
+        <entry>
+            <title type="text">Charle抓取https</title>
+            <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/posts/charles_https/" />
+            <id>https://gaoyanpao.github.io/posts/charles_https/</id>
+            <updated>2020-08-23T20:26:17+08:00</updated>
+            <published>2020-08-23T16:56:26+08:00</published>
+            <author>
+                    <name>dapao</name>
+                    <uri>https://gaoyanpao.github.io/</uri>
+                    <email>gaoyanpao@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    
+    <summary type="html"><![CDATA[charles设置 Proxy-&gt;Proxy Settings... Proxy-&gt;SSL Proxy Settings... 添加需要监听的地址和端口 ssl证书设置 Chrelse 根证书 Help-&gt;SSL Proxing-&gt;Install Charles Root Certificate……]]></summary>
+            
+                <content type="html"><![CDATA[<h2 id="charles设置">charles设置</h2>
+<ol>
+<li>
+<p>Proxy-&gt;Proxy Settings...
+<img src="/img/charles_proxy_settings.png" alt="proxy settings"></p>
+</li>
+<li>
+<p>Proxy-&gt;SSL Proxy Settings...</p>
+</li>
+</ol>
+<p>添加需要监听的地址和端口
+<img src="/img/charles_ssl_proxy_settings.png" alt="ssl proxy settings"></p>
+<h2 id="ssl证书设置">ssl证书设置</h2>
+<h5 id="chrelse-根证书">Chrelse 根证书</h5>
+<ol>
+<li>
+<p>Help-&gt;SSL Proxing-&gt;Install Charles Root Certificate</p>
+<p>此时会自动打开系统的证书管理, 将安装好的charles根证书设置为信任
+<img src="/img/charles_ssl_cert.png" alt="ssl cert"></p>
+</li>
+</ol>
+<h5 id="安卓端证书">安卓端证书</h5>
+<ol>
+<li>连接上charles代理后, 打开chls.pro/ssl下载证书并安装: wlan-&gt;高级设置-&gt;安装证书</li>
+<li>Android 6.0 (API level 23)以后，APP默认只信任系统自带的CA证书，对于用户导入的不再信任, 解决方案:
+<ol>
+<li>
+<p>参考<a href="https://developer.android.google.cn/training/articles/security-config">官方文档</a>:</p>
+</li>
+<li>
+<p>将证书安装为系统证书, 需要root权限</p>
+<p>证书的命名规则: &lt;Certificate_Hash&gt;.<Number>, 文件名为证书文件的hash值, 后缀为一个数字, 主要用于标记区别hash值相同的文件</p>
+<p>证书hash计算: <code>openssl x509 -subject_hash_old -in &lt;Certificate_File&gt;</code></p>
+<p>将证书改名后拷贝到, 系统证书目录：<code>/system/etc/security/cacerts/</code></p>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">Hyperledger Fabric学习1: 启动第一个fabric网络</title>
             <link rel="alternate" type="text/html" href="https://gaoyanpao.github.io/posts/fabric/learn1/" />

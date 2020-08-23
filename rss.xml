@@ -23,10 +23,72 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 17 Jun 2020 14:52:23 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 23 Aug 2020 20:41:14 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://gaoyanpao.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Charle抓取https</title>
+                <link>https://gaoyanpao.github.io/posts/charles_https/</link>
+                <guid isPermaLink="true">https://gaoyanpao.github.io/posts/charles_https/</guid>
+                <pubDate>Sun, 23 Aug 2020 16:56:26 +0800</pubDate>
+                
+                    <author>gaoyanpao@gmail.com (dapao)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h2 id="charles设置">charles设置</h2>
+<ol>
+<li>
+<p>Proxy-&gt;Proxy Settings...
+<img src="/img/charles_proxy_settings.png" alt="proxy settings"></p>
+</li>
+<li>
+<p>Proxy-&gt;SSL Proxy Settings...</p>
+</li>
+</ol>
+<p>添加需要监听的地址和端口
+<img src="/img/charles_ssl_proxy_settings.png" alt="ssl proxy settings"></p>
+<h2 id="ssl证书设置">ssl证书设置</h2>
+<h5 id="chrelse-根证书">Chrelse 根证书</h5>
+<ol>
+<li>
+<p>Help-&gt;SSL Proxing-&gt;Install Charles Root Certificate</p>
+<p>此时会自动打开系统的证书管理, 将安装好的charles根证书设置为信任
+<img src="/img/charles_ssl_cert.png" alt="ssl cert"></p>
+</li>
+</ol>
+<h5 id="安卓端证书">安卓端证书</h5>
+<ol>
+<li>连接上charles代理后, 打开chls.pro/ssl下载证书并安装: wlan-&gt;高级设置-&gt;安装证书</li>
+<li>Android 6.0 (API level 23)以后，APP默认只信任系统自带的CA证书，对于用户导入的不再信任, 解决方案:
+<ol>
+<li>
+<p>参考<a href="https://developer.android.google.cn/training/articles/security-config">官方文档</a>:</p>
+</li>
+<li>
+<p>将证书安装为系统证书, 需要root权限</p>
+<p>证书的命名规则: &lt;Certificate_Hash&gt;.<Number>, 文件名为证书文件的hash值, 后缀为一个数字, 主要用于标记区别hash值相同的文件</p>
+<p>证书hash计算: <code>openssl x509 -subject_hash_old -in &lt;Certificate_File&gt;</code></p>
+<p>将证书改名后拷贝到, 系统证书目录：<code>/system/etc/security/cacerts/</code></p>
+</li>
+</ol>
+</li>
+</ol>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Hyperledger Fabric学习1: 启动第一个fabric网络</title>
