@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sun, 23 Aug 2020 20:41:14 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 23 Aug 2020 20:48:51 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://gaoyanpao.github.io/rss.xml" />
         
@@ -61,7 +61,7 @@
 </ol>
 <h5 id="安卓端证书">安卓端证书</h5>
 <ol>
-<li>连接上charles代理后, 打开chls.pro/ssl下载证书并安装: wlan-&gt;高级设置-&gt;安装证书</li>
+<li>连接上charles代理后, 打开chls.pro/ssl下载证书并安装</li>
 <li>Android 6.0 (API level 23)以后，APP默认只信任系统自带的CA证书，对于用户导入的不再信任, 解决方案:
 <ol>
 <li>
