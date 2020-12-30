@@ -23,10 +23,39 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sun, 23 Aug 2020 20:50:25 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 30 Dec 2020 12:22:31 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://gaoyanpao.github.io/rss.xml" />
         
+        
+            <item>
+                <title>2020年末手机积分兑换</title>
+                <link>https://gaoyanpao.github.io/posts/2020jf/</link>
+                <guid isPermaLink="true">https://gaoyanpao.github.io/posts/2020jf/</guid>
+                <pubDate>Wed, 30 Dec 2020 12:18:54 +0800</pubDate>
+                
+                    <author>gaoyanpao@gmail.com (dapao)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<p>年末手机的积分即将清空，发送短信到运营商兑换成话费</p>
+<p>使用手机浏览器打开本页面，根据你的运营商点击下面的链接，将会帮你编辑好兑换积分的短信，发送短信后根据运营商回复的内容回复确认即可</p>
+<p><a href="sms:10010?body=JFJF#Q">联通点这</a></p>
+<p><a href="sms:10001?body=JFDH">电信点这</a></p>
+<p><a href="sms:10658999?body=HF">移动点这</a></p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Charle抓取https</title>
@@ -85,6 +114,143 @@
                     
                         
                     
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>数据库面试题整理</title>
+                <link>https://gaoyanpao.github.io/posts/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</link>
+                <guid isPermaLink="true">https://gaoyanpao.github.io/posts/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/</guid>
+                <pubDate>Sat, 22 Aug 2020 14:25:47 +0800</pubDate>
+                
+                    <author>gaoyanpao@gmail.com (dapao)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<ul>
+<li><a href="#%E6%9C%89%E4%B8%80%E5%BC%A0%E8%A1%A8%E9%87%8C%E9%9D%A2%E6%9C%89id%E8%87%AA%E5%A2%9E%E4%B8%BB%E9%94%AE%E5%BD%93insert%E4%BA%8617%E6%9D%A1%E8%AE%B0%E5%BD%95%E4%B9%8B%E5%90%8E%E5%88%A0%E9%99%A4%E4%BA%86%E7%AC%AC151617%E6%9D%A1%E8%AE%B0%E5%BD%95%E5%86%8D%E6%8A%8Amysql%E9%87%8D%E5%90%AF%E5%86%8Dinsert%E4%B8%80%E6%9D%A1%E8%AE%B0%E5%BD%95%E8%BF%99%E6%9D%A1%E8%AE%B0%E5%BD%95%E7%9A%84id%E6%98%AF18%E8%BF%98%E6%98%AF15-">有一张表，里面有ID自增主键，当insert了17条记录之后，删除了第15,16,17条记录，再把Mysql重启，再insert一条记录，这条记录的ID是18还是15 ？</a></li>
+<li><a href="#float%E4%B8%8Edouble%E7%9A%84%E5%8C%BA%E5%88%AB">float与double的区别</a></li>
+<li><a href="#heap%E8%A1%A8%E6%98%AF%E4%BB%80%E4%B9%88%E5%86%85%E5%AD%98%E8%A1%A8%E5%92%8C%E4%B8%B4%E6%97%B6%E8%A1%A8%E7%9A%84%E5%8C%BA%E5%88%AB">heap表是什么，内存表和临时表的区别</a></li>
+<li><a href="#char_length%E5%92%8Clength%E7%9A%84%E5%8C%BA%E5%88%AB">CHAR_LENGTH和LENGTH的区别</a></li>
+<li><a href="#%E6%8F%8F%E8%BF%B0mysql%E4%B8%ADinnodb%E6%94%AF%E6%8C%81%E7%9A%84%E5%9B%9B%E7%A7%8D%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB%E5%8F%8A%E5%8C%BA%E5%88%AB">描述Mysql中InnoDB支持的四种事务隔离级别及区别</a></li>
+<li><a href="#char%E4%B8%8Evarchat%E7%9A%84%E5%8C%BA%E5%88%AB">CHAR与VARCHAT的区别</a></li>
+</ul>
+<h2 id="有一张表里面有id自增主键当insert了17条记录之后删除了第151617条记录再把mysql重启再insert一条记录这条记录的id是18还是15-">有一张表，里面有ID自增主键，当insert了17条记录之后，删除了第15,16,17条记录，再把Mysql重启，再insert一条记录，这条记录的ID是18还是15 ？</h2>
+<ul>
+<li>当表类型为MyISAM时，自增主键的的最大id会记录到数据库文件里，重启后不会丢失</li>
+<li>当表类型为InnoDB时：
+<ul>
+<li>8.0版本前自增主键的最大id只会保存在内存里，重启或者OPTIMIZE都会使最大id重置为表中自增id最大的记录+1</li>
+<li>8.0版本后最大id将记录到redo log中</li>
+</ul>
+</li>
+</ul>
+<h2 id="float与double的区别">float与double的区别</h2>
+<ul>
+<li>float类型：8位精度，占用4个字节</li>
+<li>double类型：18位精度，占用8个字节</li>
+</ul>
+<h2 id="heap表是什么内存表和临时表的区别">heap表是什么，内存表和临时表的区别</h2>
+<ul>
+<li>heap表即内存表，是存放在内存里的表，所使用的内存大小通max_heap_table_size指定，临时表也是存放在内存中，但与内存表不同，所用内存大通过tmp_table_size指定</li>
+<li>当临时表的所用内存超过设置的最大值时将转换为磁盘表，会增加io操作导致性能低，而内存表到达最大内存限制时，仅会提示数据满的错误</li>
+<li>临时表的默认存储引擎是myisam，它的表结构和数据都是存放在内存中的，当mysql开连接后，就会将其都刪除；内存表的存储引擎是memory，它的表结构信息存放在磁盘扩展名为.frm，数据存放在內存中，当mysql断开连接后，数据会被清空，而表结构信仍然存在。 另内存表存储引擎memory要比临时表存储引擎myisam快</li>
+<li>临时表和内存表都可以人工创建，但临时表更多的作用是系统自己创建后，组织数据提升性能，如子查询，临时表在多个连接之间不能共享</li>
+<li>内存表使用一个固定的记录长度格式</li>
+<li>内存表不支持BLOB或TEXT列，比如varchar与text字段就不会被支持</li>
+<li>内存表表在所有客户端之间共享（就像其它任何非TEMPORARY表）</li>
+<li>MEMORY存储引擎执行HASH和BTREE索引。你可以通过添加一个如下所示的USING子句给定的索引指定一个或另一个</li>
+<li>heap表使用场景：涉及瞬态，非关键数据的操作，例如会话管理或缓存。内存中存储实现快速访问和低延迟的数据。数据量可以完全容纳在内存中，而不会导致操作系统换虚拟内存页面。只读或者只读为主的数据访问模式。</li>
+</ul>
+<h2 id="char_length和length的区别">CHAR_LENGTH和LENGTH的区别</h2>
+<ul>
+<li>CHAR_LENGTH是字符数，LENGTH是字节数。字符编码为latin时这两个是一样的，对于unicode和其他编码，他们会不一样</li>
+</ul>
+<h2 id="描述mysql中innodb支持的四种事务隔离级别及区别">描述Mysql中InnoDB支持的四种事务隔离级别及区别</h2>
+<ul>
+<li>read-uncommited（读未提交）：在该隔离级别所有事务都可以看到其他未提交事务结果。此隔离级别很少用于实际生产，因为他的性能并不比其他级别好多少。读取未提数据也成为脏读。</li>
+<li>read-committed（不可重复读）：这是大多数数据库系统的默认隔离级别（但不mysql默认的）。它满足了隔离的简单定义：一个事务只能看见已提交事务所做的改变这种隔离级别也支持所谓的不可重复读，因为同一事务的其他实例在该实例处理期间可有新的提交，所以同一select可能返回不同结果。</li>
+<li>repeatable-read（可重复读）：这是mysql的默认事务隔离级别，它确保同一事务多个实例在并发读取数据时会看到同样的数据行，不过理论上会导致幻读。innoDBfalcon存储引擎通过多版本并发控制（MVCC，Mutil-Version ConcurrencyControl）机制解决了该问题。注：多版本只是解决不可重复读问题，而加上间隙锁才决了幻读问题。</li>
+<li>serializable（串行化）：这是最高的隔离级别，它通过强制事务排序，使他们不能互相冲突，从而解决幻读问题。简而言之，它是在每个读的数据行上加上共享锁。在个级别可能会导致大量的超时和锁竞争。</li>
+<li>
+<table>
+<thead>
+<tr>
+<th>隔离级别</th>
+<th>脏读</th>
+<th>不可重复读</th>
+<th>幻读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>read-uncommited</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr>
+<td>read-committed</td>
+<td>×</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr>
+<td>repeatable-read</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>serializable</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h2 id="char与varchat的区别">CHAR与VARCHAT的区别</h2>
+<ul>
+<li>CHAR为定长字符串，插入长度小于定义长度的字符串时将使用空格填充；VARCHAR为变长字符串，占用的空间为存入的实际字符数+1个字节（n&lt;=255）或2个字节(n&gt;255)</li>
+<li>因为长度固定，所以CHAR的存取速度比VARCHAR快，但需要更大的空间，是使用空间换时间，VARCHAR反之；<strong>大数据量</strong>提取时varchar的磁盘IO消耗更低，意味着varchar综合查询性能会更好,所以实际应用中大数据量(多行)查询返回，varchar的查询性能比起char来要好出不少</li>
+<li>CHAR的最大长度为255，与字符编码无关；VARCHAR的最大有效长度由最大行大小和使用的字符集确定，整体最大长度是 65,532字节。</li>
+<li>选择char和varchar会改变整体数据结构的算法以及存储方式。在mysql应用中，如已存在varchar字段，那么其它所有的char字段将以varchar方式存储。</li>
+<li>在MySQL中用来判断是否需要进行对据列类型转换的规则：
+<ul>
+<li>在一个数据表里，如果每一个数据列的长度都是固定的，那么每一个数据行的长度也将是固定的</li>
+<li>只要数据表里有一个数据列的长度的可变的，那么各数据行的长度都是可变的</li>
+<li>如果某个数据表里的数据行的长度是可变的，那么，为了节约存储空间，MySQL会把这个数据表里的固定长度类型的数据列转换为相应的可变长度类型。例外：长度小于4个字符的char数据列不会被转换为varchar类型</li>
+</ul>
+</li>
+</ul>
+<p>待续</p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://gaoyanpao.github.io/tags/mysql/">mysql</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://gaoyanpao.github.io/tags/db/">db</category>
+                                
+                            
                         
                     
                 
@@ -239,8 +405,6 @@ curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.1 1.4.6 0.4.18
 </span><span class="lnt">56
 </span><span class="lnt">57
 </span><span class="lnt">58
-</span><span class="lnt">59
-</span><span class="lnt">60
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-Python" data-lang="Python"><span class="c1"># -*- coding: utf-8 -*-</span>
@@ -268,10 +432,8 @@ curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.1 1.4.6 0.4.18
     <span class="k">def</span> <span class="nf">getDict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict</span>
     <span class="k">def</span> <span class="nf">get_node</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">temp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict</span>
-        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__tree</span><span class="p">:</span>
-            <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
-        <span class="k">return</span> <span class="n">temp</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">__tree</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+        
 <span class="k">def</span> <span class="nf">parse_xml_to_json</span><span class="p">(</span><span class="n">xml_string</span><span class="p">):</span>
     <span class="n">handler</span> <span class="o">=</span> <span class="n">XmlToJsonHandler</span><span class="p">()</span>
     <span class="c1"># 删除换行和制表符</span>
